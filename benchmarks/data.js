@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638725591365,
+  "lastUpdate": 1638725626473,
   "repoUrl": "https://github.com/SmokeDawg92967/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26630,44 +26630,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "c750109dd75b03a9f91dacd1b66b2b8ee140ec0d",
-          "message": "Remove rate property setter from TraceIdRatioBasedSampler (#1536)",
-          "timestamp": "2021-01-19T15:29:02-08:00",
-          "tree_id": "4378974a917e9b5516014e9616da6b7156cd12fa",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c750109dd75b03a9f91dacd1b66b2b8ee140ec0d"
-        },
-        "date": 1611099045079,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2932.163991571807,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000042072190461320326",
-            "extra": "mean: 341.04504484551114 usec\nrounds: 223"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3752.702394986363,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008627045433132147",
-            "extra": "mean: 266.47463474215465 usec\nrounds: 5325"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "1d39f7f819d652dd32eb066dd04bac5ae53b855d",
           "message": "Fix TraceState to adhere to specs (#1502)",
           "timestamp": "2021-01-20T09:22:57-08:00",
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008819960969963751",
             "extra": "mean: 297.4034851073317 usec\nrounds: 4801"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8bbaf76e59d6d0ac816109b6ba3378714c8b2333",
+          "message": "rename ConsoleExporter to ConsoleLogExporter (#2307)\n\n* rename ConsoleExporter to ConsoleLogExporter\r\n\r\n* update changelog",
+          "timestamp": "2021-12-04T04:21:59+05:30",
+          "tree_id": "188b1a4c68fd08dedcfe9bd7042b9ce8200d90d5",
+          "url": "https://github.com/SmokeDawg92967/opentelemetry-python/commit/8bbaf76e59d6d0ac816109b6ba3378714c8b2333"
+        },
+        "date": 1638725619186,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2405.6261661769026,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00010473848809491057",
+            "extra": "mean: 415.6921861176925 usec\nrounds: 1311"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4877.261189637231,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008110399229210315",
+            "extra": "mean: 205.03310385031475 usec\nrounds: 6519"
           }
         ]
       }
