@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638725437449,
+  "lastUpdate": 1638725444058,
   "repoUrl": "https://github.com/SmokeDawg92967/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -62428,6 +62428,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001017928898645235",
             "extra": "mean: 8.928781744752403 usec\nrounds: 44842"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8bbaf76e59d6d0ac816109b6ba3378714c8b2333",
+          "message": "rename ConsoleExporter to ConsoleLogExporter (#2307)\n\n* rename ConsoleExporter to ConsoleLogExporter\r\n\r\n* update changelog",
+          "timestamp": "2021-12-04T04:21:59+05:30",
+          "tree_id": "188b1a4c68fd08dedcfe9bd7042b9ce8200d90d5",
+          "url": "https://github.com/SmokeDawg92967/opentelemetry-python/commit/8bbaf76e59d6d0ac816109b6ba3378714c8b2333"
+        },
+        "date": 1638725435805,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 54787.504190870925,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013278376348604035",
+            "extra": "mean: 18.252337184701087 usec\nrounds: 8482"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 106976.86042698647,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017958358588870003",
+            "extra": "mean: 9.347815929618884 usec\nrounds: 45249"
           }
         ]
       }
